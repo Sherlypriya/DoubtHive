@@ -14,6 +14,7 @@ const userRoutes = require('./routes/userRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
 const perkRoutes = require('./routes/perkRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const adminResetRoute = require('./routes/adminResetRoute');
 
 const app = express();
 
@@ -128,6 +129,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/perks', perkRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/temporary-admin', adminResetRoute);
 
 // ── 404 handler ───────────────────────────────────────────────────────────────
 app.use((req, res) => {
