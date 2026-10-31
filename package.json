@@ -1,0 +1,16 @@
+{
+  "name": "doubthive-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix DoubtHive run dev",
+    "start": "npm --prefix DoubtHive run dev",
+    "server": "npm --prefix DoubtHive/server run dev",
+    "client": "npm --prefix DoubtHive/client run dev",
+    "build": "npm --prefix DoubtHive/client run build",
+    "seed": "npm --prefix DoubtHive/server run seed",
+    "test": "npm --prefix DoubtHive/server run test",
+    "test:email": "npm --prefix DoubtHive/server run test:email",
+    "test:all": "npm --prefix DoubtHive/server run test:all"
+  }
+}

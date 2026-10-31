@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Env files
+.env
+.env*.local
+server/.env
+client/.env
+client/.env*.local
+
+# Build output
+client/dist/
+
+# Uploads
+server/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
